@@ -4,6 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Nan Liang - AI-guided biological sequence design, cell-type-specific gene regulation, and biological vector engineering. Contact: liangn.personal@qq.com">
+  <link rel="canonical" href="https://agingnan.github.io/">
+  <meta property="og:title" content="Nan Liang">
+  <meta property="og:description" content="Nan Liang - AI-guided biological sequence design, cell-type-specific gene regulation, and biological vector engineering. Contact: liangn.personal@qq.com">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://agingnan.github.io/">
+  <meta property="og:image" content="https://agingnan.github.io/assets/Nan.jpg">
   <title>Nan Liang</title>
   <style>
     :root {
@@ -190,26 +196,63 @@
       line-height: 1.9;
     }
 
+    .paper-details {
+      display: grid;
+      gap: 6px;
+    }
+
+    .paper-title {
+      color: var(--ink);
+      text-decoration-color: rgba(18, 104, 95, 0.35);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 5px;
+    }
+
+    .paper-title:hover {
+      color: var(--accent-ink);
+      text-decoration-color: var(--accent);
+    }
+
+    .paper-meta {
+      color: var(--soft-ink);
+      font-size: 14px;
+      font-weight: 620;
+      line-height: 1.35;
+    }
+
     @media (max-width: 760px) {
       main {
         width: min(100% - 30px, 1040px);
-        padding: 42px 0 34px;
+        padding: 30px 0 30px;
         align-content: start;
-        gap: 34px;
+        gap: 26px;
       }
 
       .hero {
         grid-template-columns: 1fr;
-        gap: 28px;
+        gap: 20px;
       }
 
       .portrait {
         order: -1;
-        width: 118px;
+        width: 104px;
+      }
+
+      .eyebrow {
+        margin-bottom: 12px;
+      }
+
+      h1 {
+        font-size: clamp(48px, 14vw, 54px);
+      }
+
+      .interests {
+        margin-top: 20px;
+        font-size: 19px;
       }
 
       .contact-row {
-        gap: 10px 16px;
+        gap: 8px 16px;
       }
 
       .email {
@@ -219,13 +262,15 @@
 
       .publications {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 14px;
+        padding-top: 28px;
       }
 
       li {
         grid-template-columns: 28px minmax(0, 1fr);
         gap: 12px;
-        font-size: 18px;
+        padding-bottom: 16px;
+        font-size: 17px;
       }
     }
   </style>
@@ -252,8 +297,18 @@
     <section class="publications" aria-labelledby="publications-title">
       <h2 id="publications-title">Publications</h2>
       <ol>
-        <li>Finding the perfect promoter: Correlating single-cell transcriptome data with gene drive performance</li>
-        <li>A systematic delineation of 3&prime; UTR regulatory elements and their contextual associations</li>
+        <li>
+          <div class="paper-details">
+            <a class="paper-title" href="https://doi.org/10.1101/2025.10.08.681126">Finding the perfect promoter: Correlating single-cell transcriptome data with gene drive performance</a>
+            <span class="paper-meta">bioRxiv, 2025</span>
+          </div>
+        </li>
+        <li>
+          <div class="paper-details">
+            <a class="paper-title" href="https://doi.org/10.1101/2025.06.09.658412">A systematic delineation of 3&prime;UTR regulatory elements and their contextual associations</a>
+            <span class="paper-meta">bioRxiv, 2025</span>
+          </div>
+        </li>
       </ol>
     </section>
   </main>
