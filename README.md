@@ -19,7 +19,7 @@ Contact and profiles:
 
 Highlighted publications:
 
-- Finding the perfect promoter: Correlating single-cell transcriptome data with
-  gene drive performance
+- Finding the perfect promoter for Cas9 in homing gene drives using single cell
+  transcriptome data
 - A systematic delineation of 3' UTR regulatory elements and their contextual
   associations
