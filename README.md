@@ -21,5 +21,5 @@ Highlighted publications:
 
 - Finding the perfect promoter for Cas9 in homing gene drives using single cell
   transcriptome data
-- A systematic delineation of 3' UTR regulatory elements and their contextual
-  associations
+- [A systematic delineation of 3′UTR regulatory elements and their contextual
+  associations](https://doi.org/10.1016/j.cels.2026.101761) — Cell Systems (2026)
