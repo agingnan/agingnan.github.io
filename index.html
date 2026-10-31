@@ -170,7 +170,7 @@
               <h3><a class="paper-title" href="https://doi.org/10.1016/j.cels.2026.101761">A systematic delineation of 3′UTR regulatory elements and their contextual associations</a></h3>
               <p class="paper-authors"><strong>Nan Liang</strong>, Jing-Yi Li, Yang Ding, Yu Wang, Jackson Champer, Li-Chen Ren &amp; Ge Gao</p>
               <p class="paper-summary">Mapping regulatory elements in 3′UTRs and examining their contextual associations.</p>
-              <a class="paper-link" href="https://doi.org/10.1016/j.cels.2026.101761" aria-label="Read the 3 prime UTR study in Cell Systems">Read article <span class="arrow" aria-hidden="true">↗</span></a>
+              <a class="paper-link" id="seers-read-link" href="https://doi.org/10.1016/j.cels.2026.101761" aria-label="Read the 3 prime UTR study in Cell Systems"><span class="paper-link-label">Read article</span> <span class="arrow" aria-hidden="true">↗</span></a>
             </article>
           </li>
           <li class="paper">
@@ -191,6 +191,24 @@
   </div>
   <script>
     (() => {
+      const seersLink = document.getElementById('seers-read-link');
+      if (seersLink) {
+        const refreshSeersLink = () => {
+          const freeAccess = Date.now() < new Date(2026, 11, 17).getTime();
+          seersLink.href = freeAccess
+            ? 'https://authors.elsevier.com/c/1o0Yd8YyDfyNm5'
+            : 'https://doi.org/10.1016/j.cels.2026.101761';
+          seersLink.querySelector('.paper-link-label').textContent = freeAccess ? 'Read free before 17 Dec' : 'Read article';
+          seersLink.setAttribute('aria-label', freeAccess
+            ? 'Read SEERS free full text before 17 December 2026'
+            : 'Read the 3 prime UTR study in Cell Systems');
+          if (freeAccess) seersLink.title = 'Free access before 17 December 2026';
+          else seersLink.removeAttribute('title');
+        };
+        refreshSeersLink();
+        seersLink.addEventListener('click', refreshSeersLink);
+      }
+
       const button = document.getElementById('copy-email');
       const email = document.getElementById('email');
       const status = document.getElementById('copy-status');
