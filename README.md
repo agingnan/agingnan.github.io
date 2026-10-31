@@ -23,3 +23,6 @@ Highlighted publications:
   associations](https://doi.org/10.1016/j.cels.2026.101761) — Cell Systems (2026)
 - Finding the perfect promoter for Cas9 in homing gene drives using single cell
   transcriptome data
+- [Quantifying the regulatory potential of genetic variants via a hybrid
+  sequence-oriented model with SVEN](https://doi.org/10.1038/s41467-024-55392-7)
+  — Nature Communications (2024); [code](https://github.com/gao-lab/SVEN)
